@@ -1,4 +1,5 @@
 import React from 'react';
+import './Header.scss';
 import navlogo from './assets/baking-icon-32x32.png';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 

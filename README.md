@@ -24,3 +24,7 @@ React Bootstrap, Bootswatch (Pulse Theme),
 - Create Header with nav logo and links
 
 #### Setup Footer
+
+- Install sass and react-icons
+- Get footer to stay on the bottom - https://radu.link/make-footer-stay-bottom-page-bootstrap/
+- Add Icons and Anchor links
