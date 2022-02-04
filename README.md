@@ -34,3 +34,8 @@ React Bootstrap, Bootswatch (Pulse Theme),
 - Create Pages folder and Add Home component which will list out all the products
 - Make sure Homecontent plumbling is setup and displays the product names
 - Create a product component and display in a bootstrap card
+
+#### Add Rating Component
+
+- Create Rating Component (pass in value and text prop) and add it in Product Component
+- Need conditional logic on which star icons to display (filled star, half filled star, blank star)
