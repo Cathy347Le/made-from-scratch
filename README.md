@@ -33,4 +33,4 @@ React Bootstrap, Bootswatch (Pulse Theme),
 
 - Create Pages folder and Add Home component which will list out all the products
 - Make sure Homecontent plumbling is setup and displays the product names
-- Create a product component
+- Create a product component and display in a bootstrap card
