@@ -13,18 +13,14 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <FaLinkedin
-                style={{ fontSize: '30px', marginInline: '6px', color: '#fff' }}
-              />
+              <FaLinkedin style={socialIconsStyle} />
             </a>
             <a
               href="https://github.com/Cathy347Le"
               target="_blank"
               rel="noreferrer"
             >
-              <FaGithubSquare
-                style={{ fontSize: '30px', marginInline: '6px', color: '#fff' }}
-              />
+              <FaGithubSquare style={socialIconsStyle} />
             </a>
           </Col>
         </Row>
@@ -34,6 +30,12 @@ const Footer = () => {
       </Container>
     </footer>
   );
+};
+
+const socialIconsStyle = {
+  fontSize: '30px',
+  marginInline: '6px',
+  color: '#fff',
 };
 
 export default Footer;
