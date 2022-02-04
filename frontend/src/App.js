@@ -9,8 +9,9 @@ function App() {
     <div className="App d-flex flex-column min-vh-100">
       <Header />
       <Container>
-        <div className="main-content py-3"></div>
-        <HomeContent />
+        <div className="main-content py-5">
+          <HomeContent />
+        </div>
       </Container>
       <Footer />
     </div>
