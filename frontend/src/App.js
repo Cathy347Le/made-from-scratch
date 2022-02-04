@@ -8,7 +8,7 @@ function App() {
     <div className="App d-flex flex-column min-vh-100">
       <Header />
       <Container>
-        <div className="main-content"></div>
+        <div className="main-content py-3"></div>
         <h1>Goodnight Moon</h1>
       </Container>
       <Footer />

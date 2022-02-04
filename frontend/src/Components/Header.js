@@ -22,6 +22,10 @@ const Header = () => {
           <Nav.Link href="#out-story">Our Story</Nav.Link>
           <Nav.Link href="#faq">FAQ</Nav.Link>
         </Nav>
+        <Nav className="ml-auto">
+          <Nav.Link href="#home">Cart</Nav.Link>
+          <Nav.Link href="#out-story">Sign In</Nav.Link>
+        </Nav>
       </Container>
     </Navbar>
   );
