@@ -1,7 +1,14 @@
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Header from './Components/Header';
+
 function App() {
   return (
     <div className="App">
-      <h1>Made from Scratch!</h1>
+      <Header />
+      <Container>
+        <h1>Body Text</h1>
+      </Container>
     </div>
   );
 }

@@ -2,9 +2,23 @@
 
 ### An Asian-American bakery offering pastries that are damn delicious
 
+#### Resources
+
+React, Redux, Node, MongoDB, Postman
+React Bootstrap, Bootswatch (Pulse Theme),
+
 #### Setup frontend and update public folder
 
 - Update site meta data in public/index.html
 - Add cupcake favicon
 - Remove git from frontend and add it to the root directory instead
 - Move and update .gitignore file to the roote directory
+
+#### Clean up files in the src files
+
+- Remove unused code and files
+
+#### React-Bootstrap setup with Header
+
+- `npm install react-bootstrap` and Bootswatch Pulse theme
+- Create Header with nav logo and links
