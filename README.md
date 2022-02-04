@@ -28,3 +28,9 @@ React Bootstrap, Bootswatch (Pulse Theme),
 - Install sass and react-icons
 - Get footer to stay on the bottom - https://radu.link/make-footer-stay-bottom-page-bootstrap/
 - Add Icons and Anchor links
+
+#### Home Screen Products List
+
+- Create Pages folder and Add Home component which will list out all the products
+- Make sure Homecontent plumbling is setup and displays the product names
+- Create a product component

@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Header from './Components/Header';
+import Homecontent from './Pages/Homecontent';
 import Footer from './Components/Footer';
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
       <Header />
       <Container>
         <div className="main-content py-3"></div>
-        <h1>Goodnight Moon</h1>
+        <Homecontent />
       </Container>
       <Footer />
     </div>
