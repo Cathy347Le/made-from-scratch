@@ -22,3 +22,5 @@ React Bootstrap, Bootswatch (Pulse Theme),
 
 - `npm install react-bootstrap` and Bootswatch Pulse theme
 - Create Header with nav logo and links
+
+#### Setup Footer

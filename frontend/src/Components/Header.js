@@ -1,5 +1,5 @@
 import React from 'react';
-import navlogo from '../Assets/baking-icon-32x32.png';
+import navlogo from './assets/baking-icon-32x32.png';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
 const Header = () => {
