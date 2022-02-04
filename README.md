@@ -40,3 +40,5 @@ React Bootstrap, Bootswatch (Pulse Theme),
 
 - Create Rating Component (pass in value and text prop) and add it in Product Component
 - Need conditional logic on which star icons to display (filled star, half filled star, blank star)
+- Add in Default Color Props
+- Style ratings component

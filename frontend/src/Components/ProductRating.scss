@@ -1,0 +1,10 @@
+.rating {
+  span {
+    margin-right: 4px;
+    &.review-text {
+      margin-left: 4px;
+      position: relative;
+      top: 2px;
+    }
+  }
+}
