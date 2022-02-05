@@ -47,6 +47,9 @@ React Bootstrap, Bootswatch (Pulse Theme),
 
 - install the old version `npm i react-router@5.3.0`
 - install `npm i react-router-bootstrap@rr-v4` that is compatible with react-router v5 since we're using react-bootstrap that have the Link components
+- Add in Router and Routes
+- Add in Route for HomeContent, ourStory, and FAQ
+- Add route for Single Product
 
 ### Things to do Later
 

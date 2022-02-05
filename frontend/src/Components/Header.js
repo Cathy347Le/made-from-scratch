@@ -18,9 +18,9 @@ const Header = () => {
           Made from Scratch
         </Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#out-story">Our Story</Nav.Link>
-          <Nav.Link href="#faq">FAQ</Nav.Link>
+          <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="/our-story">Our Story</Nav.Link>
+          <Nav.Link href="/faq">FAQ</Nav.Link>
         </Nav>
         <Nav className="ml-auto">
           <Nav.Link href="#home">Cart</Nav.Link>
