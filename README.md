@@ -51,6 +51,16 @@ React Bootstrap, Bootswatch (Pulse Theme),
 - Add in Route for HomeContent, ourStory, and FAQ
 - Add route for Single Product
 
+#### Create Single Product Page
+
+- Normally we would pull this data from the backend
+- For now we'll import products.js and use the find method to capture the correct product
+  - There are multiple ways to grab the id: useParams from react-router-dom or props.match.id
+- Add a Go Back button to the homepage
+- Add product image, name, rating component, price, and description
+- Status with conditional logic if it is in stock or out of stock
+- Add to Card button - button will disable if item is out of stock
+
 ### Things to do Later
 
 - Update React Router to v6
