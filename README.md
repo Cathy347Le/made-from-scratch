@@ -42,3 +42,11 @@ React Bootstrap, Bootswatch (Pulse Theme),
 - Need conditional logic on which star icons to display (filled star, half filled star, blank star)
 - Add in Default Color Props
 - Style ratings component
+
+#### Add React Router v5
+
+- install the old version `npm i react-router@5.3.0`
+
+### Things to do Later
+
+- Update React Router to v6
