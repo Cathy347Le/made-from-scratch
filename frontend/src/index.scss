@@ -1,0 +1,11 @@
+.list-group-item {
+  color: #17141f;
+  background-color: transparent;
+  &:hover {
+    color: inherit;
+  }
+}
+
+.product-cart .list-group-item {
+  border-color: rgba(0, 0, 0, 0.125);
+}

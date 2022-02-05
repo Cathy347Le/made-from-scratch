@@ -60,6 +60,7 @@ React Bootstrap, Bootswatch (Pulse Theme),
 - Add product image, name, rating component, price, and description
 - Status with conditional logic if it is in stock or out of stock
 - Add to Card button - button will disable if item is out of stock
+- Styling page
 
 ### Things to do Later
 

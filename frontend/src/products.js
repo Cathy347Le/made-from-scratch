@@ -14,13 +14,13 @@ const products = [
   },
   {
     _id: '2',
-    name: 'iPhone 11 Pro 256GB Memory',
+    name: 'Pandan Coconut Donut',
     image: '/images/pandan-coconut-donut.jpeg',
     description:
-      'Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life',
+      'Fluffy brioche donut and pandan coconut cream filling. Pandan is a herbaceous tropical plant that grows abundantly in Southeast Asia. Pandan leaves are used to lend a unique taste and aroma that is described as fresh, fragrant, and sweet to flavor desserts and drinks as well as savory dishes.',
     brand: 'Apple',
     category: 'Electronics',
-    price: 599.99,
+    price: 4.25,
     countInStock: 7,
     rating: 4.0,
     numReviews: 8,

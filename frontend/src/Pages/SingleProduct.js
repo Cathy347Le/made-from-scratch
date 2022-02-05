@@ -11,14 +11,14 @@ const SingleProduct = () => {
 
   return (
     <div className="single-product-page">
-      <Link className="btn btn-light my-3" to="/">
+      <Link className="btn btn-outline-primary my-3" to="/">
         Go Back
       </Link>
       <Row>
-        <Col md={6}>
+        <Col md={4}>
           <Image src={product.image} alt={product.name} fluid />
         </Col>
-        <Col md={3}>
+        <Col md={4}>
           <ListGroup variant="flush">
             <ListGroup.Item>
               <h3>{product.name}</h3>
@@ -34,7 +34,7 @@ const SingleProduct = () => {
           </ListGroup>
         </Col>
         <Col md={3}>
-          <Card>
+          <Card className="product-cart">
             <ListGroup.Item>
               <Row>
                 <Col>Price:</Col>
