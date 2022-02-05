@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import HomeContent from './Pages/HomeContent';
 import Story from './Pages/Story';
 import Faq from './Pages/Faq';
+import SingleProduct from './Pages/SingleProduct';
 import Footer from './Components/Footer';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" exact component={HomeContent} />
             <Route path="/our-story" component={Story} />
             <Route path="/faq" component={Faq} />
+            <Route path="/product/:id" component={SingleProduct} />
           </div>
         </Container>
         <Footer />
