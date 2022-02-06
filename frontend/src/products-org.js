@@ -1,13 +1,13 @@
 const products = [
   {
     _id: '1',
-    name: 'Passion Fruit Donut',
+    name: 'Airpods Wireless Bluetooth Headphones',
     image: '/images/passion-fruit-donut.png',
     description:
       'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
     brand: 'Apple',
     category: 'Electronics',
-    price: 5.25,
+    price: 89.99,
     countInStock: 10,
     rating: 4.5,
     numReviews: 4,
@@ -27,13 +27,13 @@ const products = [
   },
   {
     _id: '3',
-    name: 'Guava Mousse Donut',
+    name: 'Cannon EOS 80D DSLR Camera',
     image: '/images/guava-donut.jpeg',
     description:
       'Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design',
     brand: 'Cannon',
     category: 'Electronics',
-    price: 4.0,
+    price: 929.99,
     countInStock: 5,
     rating: 3,
     numReviews: 12,

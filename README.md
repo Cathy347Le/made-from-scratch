@@ -58,9 +58,17 @@ React Bootstrap, Bootswatch (Pulse Theme),
   - There are multiple ways to grab the id: useParams from react-router-dom or props.match.id
 - Add a Go Back button to the homepage
 - Add product image, name, rating component, price, and description
+- Format price number as currency - https://flaviocopes.com/how-to-format-number-as-currency-javascript/
 - Status with conditional logic if it is in stock or out of stock
 - Add to Card button - button will disable if item is out of stock
 - Styling page
+
+#### Setup Backend
+
+Some background info: Need to setup a backend which will communicate with a DB (MongoDB). Server will use mongoose to help commmunicate with the DB. Mongoose has its own methods like find or findmyID to interact with the DB. To capture data from the backend end, you need to make HTTP requests. And server will serve JSON Data (as opposed to HTML files, etc.) We're going to move the products.js file to the server.
+
+- Create backend folder and a server.js (entrypoint for our backend)
+- In root directory, we want a package.json `npm init` and express `npm i express`
 
 ### Things to do Later
 

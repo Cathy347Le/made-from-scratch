@@ -4,6 +4,12 @@ import ProductRating from './ProductRating';
 import { Link } from 'react-router-dom';
 
 const Product = ({ product }) => {
+  const formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    minimumFractionDigits: 2,
+  });
+
   return (
     <Card className="my-3 p-3 rounded">
       <Link to={`/product/${product._id}`}>
@@ -24,7 +30,8 @@ const Product = ({ product }) => {
           </div>
         </Card.Text>
         <Card.Text as="h3">
-          <div className="my-3">${product.price}</div>
+          {/* <div className="my-3">${product.price}</div> */}
+          <div className="my-3">{formatter.format(`${product.price}`)}</div>
         </Card.Text>
       </Card.Body>
     </Card>
