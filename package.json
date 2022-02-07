@@ -1,0 +1,14 @@
+{
+  "name": "made-from-scratch",
+  "version": "1.0.0",
+  "description": "Asian-American bakery ecommerce site",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cathy Le",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}

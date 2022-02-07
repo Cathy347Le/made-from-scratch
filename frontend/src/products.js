@@ -4,10 +4,10 @@ const products = [
     name: 'Passion Fruit Donut',
     image: '/images/passion-fruit-donut.png',
     description:
-      'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
+      "Fluffy brioche, passion fruit curd dusted in raspberry sugar, rose petal garnish. Passion fruit has a sweet-but-also-tart flavor, and a fragrant aroma, which adds to the eating experience. It's hard to compare them to another fruit since they are so unique but if pressed: think a little like a kiwi, a little like pineapple.",
     brand: 'Apple',
     category: 'Electronics',
-    price: 5.25,
+    price: 4.5,
     countInStock: 10,
     rating: 4.5,
     numReviews: 4,
@@ -30,7 +30,7 @@ const products = [
     name: 'Guava Mousse Donut',
     image: '/images/guava-donut.jpeg',
     description:
-      'Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design',
+      "Fluffy brioche donut with a creamy and tropical filling of guava mousse. Guava's flavor is unique, sweet, and almost universally pleasant. Many people think it tastes like a hybrid between a strawberry and a pear.",
     brand: 'Cannon',
     category: 'Electronics',
     price: 4.0,
