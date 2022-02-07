@@ -15,7 +15,6 @@ const HomeContent = () => {
     //   setProducts(res.data);
     // };
 
-    //WITH ERROR HANDLING BUT MESSY
     const fetchProducts = async () => {
       const res = await axios
         .get('/api/products')
@@ -31,29 +30,28 @@ const HomeContent = () => {
 
     fetchProducts();
   }, []);
-  return (
-    isLoaded &&
-    isLoaded(
-      <div className="products-list">
-        <Row>
-          <h2>HEAVEN IN ONE BITE</h2>
-          {products.map((product) => {
-            return (
-              <Col
-                key={product._id}
-                sm={12}
-                md={6}
-                lg={4}
-                xl={3}
-                className="product-item"
-              >
-                <Product product={product} />
-              </Col>
-            );
-          })}
-        </Row>
-      </div>
-    )
+  return isLoaded ? (
+    <div className="products-list">
+      <Row>
+        <h2>HEAVEN IN ONE BITE</h2>
+        {products.map((product) => {
+          return (
+            <Col
+              key={product._id}
+              sm={12}
+              md={6}
+              lg={4}
+              xl={3}
+              className="product-item"
+            >
+              <Product product={product} />
+            </Col>
+          );
+        })}
+      </Row>
+    </div>
+  ) : (
+    <div>Loading...</div>
   );
 };
 

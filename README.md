@@ -90,6 +90,7 @@ Some background info: Need to setup a backend which will communicate with a DB (
 #### Fetch singleProduct from backend
 
 - Copy and adjust previous setup from fetching all products
+- add isLoaded state
 
 ### Things to do Later
 
