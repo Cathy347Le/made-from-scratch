@@ -79,6 +79,8 @@ Some background info: Need to setup a backend which will communicate with a DB (
 
 - Turn on backend and frontend. Get frontend to fetch products and product/:id
 - Add axios
+  - With error handling, you should use .then and .catch
+  - If using fetch, then you should use error and isLoaded as useState
 - Setup HomeContent with useState and useEffect
   - Setup proxy since backend is on a different port (aka 5000)
   - console.log products first

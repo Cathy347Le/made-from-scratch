@@ -5,14 +5,28 @@ import { Row, Col } from 'react-bootstrap';
 import Product from '../Components/Product';
 
 const HomeContent = () => {
-  const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
+    //WITH ERROR HANDLING
+    // const fetchProducts = async () => {
+    //   const res = await axios.get('/api/products'); //or destructure do and const {data} since res return an object
+    //   setIsLoaded(true);
+    //   setProducts(res.data);
+    // };
+
     const fetchProducts = async () => {
-      const res = await axios.get('/api/products'); //or destructure do and const {data}
-      console.log(res.data);
+      const res = await axios
+        .get('/api/products')
+        .then((data) => {
+          setIsLoaded(true);
+          setProducts(data.data);
+        })
+        .catch((err) => {
+          setIsLoaded(true);
+          console.log(err);
+        });
     };
 
     fetchProducts();
