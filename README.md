@@ -91,6 +91,7 @@ Some background info: Need to setup a backend which will communicate with a DB (
 
 - Copy and adjust previous setup from fetching all products
 - add isLoaded state
+- Add `npm run dev` script to run both frontend and backend server using the concurrently package
 
 ### Things to do Later
 
