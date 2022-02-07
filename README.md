@@ -70,6 +70,11 @@ Some background info: Need to setup a backend which will communicate with a DB (
 - Create backend folder and a server.js (entrypoint for our backend)
 - In root directory, we want a package.json `npm init` and express `npm i express`
 
+#### Set Server.js and initialize Express
+
+- Send a test console.log request to server and display products and products/:id json
+- Add nodemon and concurrently as devDependency
+
 ### Things to do Later
 
 - Update React Router to v6

@@ -4,11 +4,16 @@
   "description": "Asian-American bakery ecommerce site",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node backend/server",
+    "server": "nodemon backend/server"
   },
   "author": "Cathy Le",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
   }
 }
