@@ -85,6 +85,8 @@ Some background info: Need to setup a backend which will communicate with a DB (
   - Setup proxy since backend is on a different port (aka 5000)
   - console.log products first
 
+#### Fetch singleProduct from backend
+
 ### Things to do Later
 
 - Update React Router to v6
