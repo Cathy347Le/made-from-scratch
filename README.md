@@ -83,7 +83,8 @@ Some background info: Need to setup a backend which will communicate with a DB (
   - If using fetch, then you should use error and isLoaded as useState
 - Setup HomeContent with useState and useEffect
   - Setup proxy since backend is on a different port (aka 5000)
-  - console.log products first
+  - console.log products first before doing setProducts
+  - Afterwards reccomended you open dev tools and view the Network Response Headers for a 200 status code
 
 #### Fetch singleProduct from backend
 
