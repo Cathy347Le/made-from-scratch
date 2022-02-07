@@ -81,12 +81,15 @@ Some background info: Need to setup a backend which will communicate with a DB (
 - Add axios
   - With error handling, you should use .then and .catch
   - If using fetch, then you should use error and isLoaded as useState
+  - If using isLoaded, make sure to update the return function `isLoaded && isLoaded`
 - Setup HomeContent with useState and useEffect
   - Setup proxy since backend is on a different port (aka 5000)
   - console.log products first before doing setProducts
   - Afterwards reccomended you open dev tools and view the Network Response Headers for a 200 status code
 
 #### Fetch singleProduct from backend
+
+- Copy and adjust previous setup from fetching all products
 
 ### Things to do Later
 
