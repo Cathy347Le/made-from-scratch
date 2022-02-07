@@ -75,6 +75,14 @@ Some background info: Need to setup a backend which will communicate with a DB (
 - Send a test console.log request to server and display products and products/:id json
 - Add nodemon and concurrently as devDependency
 
+#### Get frontend to fetch products list from backend
+
+- Turn on backend and frontend. Get frontend to fetch products and product/:id
+- Add axios
+- Setup HomeContent with useState and useEffect
+  - Setup proxy since backend is on a different port (aka 5000)
+  - console.log products first
+
 ### Things to do Later
 
 - Update React Router to v6
