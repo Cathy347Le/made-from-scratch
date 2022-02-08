@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: '1',
     name: 'Passion Fruit Donut',
     image: '/images/passion-fruit-donut.png',
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 4,
   },
   {
-    _id: '2',
     name: 'Pandan Coconut Donut',
     image: '/images/pandan-coconut-donut.jpeg',
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: '3',
     name: 'Guava Mousse Donut',
     image: '/images/guava-donut.jpeg',
     description:

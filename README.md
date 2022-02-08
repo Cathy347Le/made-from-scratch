@@ -103,6 +103,13 @@ Some background info: Need to setup a backend which will communicate with a DB (
 #### Setup Models
 
 - Usually done one by one but all three are: userModel, productModel, and orderModel
+  Add `npm i bcryptjs` to hash user passwords
+
+#### Seed Data
+
+- In product.js - remove IDs. MongoDB creates their own
+- Create fake users with one being an admin
+- Create function to import and destroy data
 
 ### Things to do Later
 
