@@ -111,6 +111,14 @@ Some background info: Need to setup a backend which will communicate with a DB (
 - Create fake users with one being an admin
 - Create function to import and destroy data
 
+#### Create Routes
+
+- Create /routes/productRoutes.js
+- In server.js point /api/products to productRoutes
+- Check http://localhost:5000/api/products and /api/products/:id to see if data from MongoDB is displaying correctly, which can tell by looking at the IDs
+
+#### Check on Postman
+
 ### Things to do Later
 
 - Update React Router to v6
