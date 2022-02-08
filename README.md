@@ -93,6 +93,13 @@ Some background info: Need to setup a backend which will communicate with a DB (
 - add isLoaded state
 - Add `npm run dev` script to run both frontend and backend server using the concurrently package
 
+#### Setup MongoDB and Mongoose
+
+- On Mongo website, add product, database name, and clusters and capture the connection string to add to .env file
+- Install `npm install mongoose`
+- Create DB/Connection.js to connect to mongoose which will be used to interact with MongoDB
+- Run `npm run server` to more sure you can connect
+
 ### Things to do Later
 
 - Update React Router to v6
