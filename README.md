@@ -100,6 +100,10 @@ Some background info: Need to setup a backend which will communicate with a DB (
 - Create DB/Connection.js to connect to mongoose which will be used to interact with MongoDB
 - Run `npm run server` to more sure you can connect
 
+#### Setup Models
+
+- Usually done one by one but all three are: userModel, productModel, and orderModel
+
 ### Things to do Later
 
 - Update React Router to v6
