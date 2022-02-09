@@ -9,9 +9,12 @@ router.get('/', (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
-  Product.findById(req.params.id)
-    .then((product) => res.json(product))
-    .catch((err) => console.log(err));
+  Product.findById(req.params.id).then((product) =>
+    product
+      ? res.json(product)
+      : res.status(404).json({ message: 'Product not found' })
+  );
+  // .catch((err) => console.log(err));
 });
 
 module.exports = router;

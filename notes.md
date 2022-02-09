@@ -112,6 +112,11 @@ Some background info: Need to setup a backend which will communicate with a DB (
 
 #### Check on Postman
 
+Similar to checking on local browser http://localhost:5000/api/products but it is more readable. Postman also you to do all the HTTP request. Local browser can just handle GET request.
+
+- Update error handling and add custom error handling
+
 ### Things to do Later
 
 - Update React Router to v6
+- Figure out why error handling is not working
