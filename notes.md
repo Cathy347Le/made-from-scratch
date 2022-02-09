@@ -114,9 +114,12 @@ Some background info: Need to setup a backend which will communicate with a DB (
 
 Similar to checking on local browser http://localhost:5000/api/products but it is more readable. Postman also you to do all the HTTP request. Local browser can just handle GET request.
 
-- Update error handling and add custom error handling
+#### ERROR HANDLING
+
+- THEN/CATCH method - render the error message on the browser instead of console.log the error
+- ASYNC/AWAIT handles error using the TRY/CATCH structure, but can be messy when you have so many routes to do. You can use express-async-handler to handle your exceptions in a cleaner way
 
 ### Things to do Later
 
 - Update React Router to v6
-- Figure out why error handling is not working
+- Figure out why error handling is not working - need to install `npm i express-async-handler`
