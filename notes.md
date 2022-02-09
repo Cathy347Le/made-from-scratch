@@ -118,6 +118,7 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
 
 - THEN/CATCH method - render the error message on the browser instead of console.log the error
 - ASYNC/AWAIT handles error using the TRY/CATCH structure, but can be messy when you have so many routes to do. You can use express-async-handler to handle your exceptions in a cleaner way
+- ErrorHandler.js moved to Middleware folder and reference to function on server.js should be at the top. Middleware runs in order that you define.
 
 ### Things to do Later
 

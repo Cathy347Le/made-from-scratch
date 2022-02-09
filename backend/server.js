@@ -8,9 +8,9 @@ dotenv.config();
 connectDB();
 const app = express();
 
-app.use('/api/products', productRoutes);
-
 app.use(errorHandler);
+
+app.use('/api/products', productRoutes);
 
 const port = 5000;
 app.listen(port, () => {
