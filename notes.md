@@ -110,6 +110,7 @@ Some background info: Need to setup a backend which will communicate with a DB (
 - Create function to import and destroy data
 - ThinkMovie and Petz seed data is another approach.
 - You can check this is your local browser or in MongoDB
+- MongoDb will create the unique IDs
 
 #### Create Routes
 

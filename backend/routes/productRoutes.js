@@ -4,6 +4,7 @@ const asyncHandler = require('express-async-handler');
 const Product = require('../models/productModel');
 
 router.get('/', (req, res) => {
+  //empty object grabs all the data
   Product.find({})
     .then((products) => res.json(products))
     // .catch((err) => console.log(err)); Instead of console.log the error, render the error message right on the browser
