@@ -74,7 +74,7 @@ Some background info: Need to setup a backend which will communicate with a DB (
 - Add axios
   - With error handling, you should use .then and .catch
   - If using fetch, then you should use error and isLoaded as useState
-  - If using isLoaded, make sure to update the return function `isLoaded && isLoaded`
+  - If using isLoaded, make sure to update the return function
 - Setup HomeContent with useState and useEffect
   - Setup proxy since backend is on a different port (aka 5000)
   - console.log products first before doing setProducts
@@ -85,6 +85,7 @@ Some background info: Need to setup a backend which will communicate with a DB (
 - Copy and adjust previous setup from fetching all products
 - add isLoaded state
 - Add `npm run dev` script to run both frontend and backend server using the concurrently package
+- After successful communciation with frontend and backend, move the data to a database
 
 #### Setup MongoDB and Mongoose
 
@@ -95,8 +96,12 @@ Some background info: Need to setup a backend which will communicate with a DB (
 
 #### Setup Models
 
-- Usually done one by one but all three are: userModel, productModel, and orderModel
-  Add `npm i bcryptjs` to hash user passwords
+- Usually done one by one so you can test each one for accuracy
+- Each schema maps to a MongoDB collection and defines the shape/structure of the documents within the collection
+- There are four: userModel, productModel, reviewModel , and orderModel - start with the easiest
+  - productModel - since only admin users can create products, you need to connect the product and Iser schema. Ref is what schema you are connnecting to and type is what schema type (property) you need from User schema.
+  - ProductModel also takes an array of reviews which require a reviewSchema
+  - orderModel - orderItems is setup as an array of objects and not connected to the productSchema. No need for its own schema. Schema creates a unique id for items but object arrays do not. Order items can hold a lot of additional info that is specific to that order (discounts, extras like gift wrapper, tax rates).
 
 #### Seed Data
 
@@ -124,3 +129,4 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
 
 - Update React Router to v6
 - Figure out why error handling is not working - need to install `npm i express-async-handler`
+- Upload multiple product images feature
