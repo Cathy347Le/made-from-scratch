@@ -12,9 +12,10 @@ app.use(errorHandler);
 
 app.use('/api/products', productRoutes);
 
-const port = 5000;
-app.listen(port, () => {
+const PORT = process.env.PORT;
+
+app.listen(PORT, () => {
   console.log(
-    `Server listening on ${process.env.NODE_ENV} mode on PORT ${port}`
+    `Server listening on ${process.env.NODE_ENV} mode on PORT ${PORT}`
   );
 });
