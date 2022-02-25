@@ -151,6 +151,7 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
       - useSelector lets you select the part of the state
       - Dispatch listProducts and check for data in Redux dev tools (no frontend display yet)
       - useSelector to display your products on the front end.
+      - Tutorial mentions throwing an error to check and see they correct action type show on redux dev tool
 
 ## Things to do Later
 
