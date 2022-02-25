@@ -141,6 +141,11 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
   - thunk lets you make async requests in your actions
   - redux-dev-tools-extensions makes it easy to use the chrome redux dev tools
 - In frontend, setup scaffold for redux-store
+- Replace current functions: fetch all products and fetch single product
+  - Create productReducers
+  - Store action types in constants so you can keep track of all of them in a central place. This is optional.
+  - Setup redux to get all your products, productList
+    - order is constants, reducers, and then actions
 
 ## Things to do Later
 
