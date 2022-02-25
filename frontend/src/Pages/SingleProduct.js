@@ -12,7 +12,7 @@ const SingleProduct = () => {
 
   useEffect(() => {
     const fetchProduct = async () => {
-      const res = await axios
+      await axios
         .get(`/api/products/${params.id}`)
         .then((data) => {
           setIsLoaded(true);

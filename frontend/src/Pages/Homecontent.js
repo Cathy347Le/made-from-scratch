@@ -16,7 +16,7 @@ const HomeContent = () => {
     // };
 
     const fetchProducts = async () => {
-      const res = await axios
+      await axios
         .get('/api/products')
         .then((data) => {
           setIsLoaded(true);
