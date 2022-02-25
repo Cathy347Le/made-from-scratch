@@ -131,5 +131,5 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
 ## Things to do Later
 
 - Update React Router to v6
-- Figure out why error handling is not working - need to install `npm i express-async-handler`
+  ~~- Figure out why error handling is not working - need to install `npm i express-async-handler`~~
 - Upload multiple product images feature
