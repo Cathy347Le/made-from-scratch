@@ -3,7 +3,7 @@ import {
   PRODUCT_LIST_REQUEST,
   PRODUCT_LIST_SUCCESS,
   PRODUCT_LIST_FAIL,
-} from '../constants/productConstants';
+} from '../Constants/productConstants';
 
 //thunk lets you add a function within a function inorder to do async functions
 export const listProducts = () => async (dispatch) => {

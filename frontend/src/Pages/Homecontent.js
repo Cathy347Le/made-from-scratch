@@ -1,36 +1,20 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Row, Col } from 'react-bootstrap';
 import Product from '../Components/Product';
+import { listProducts } from '../Actions/productActions';
 
 const HomeContent = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [products, setProducts] = useState([]);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    //WITH ERROR HANDLING
-    // const fetchProducts = async () => {
-    //   const res = await axios.get('/api/products'); //or destructure do and const {data} since res return an object
-    //   setIsLoaded(true);
-    //   setProducts(res.data);
-    // };
+    dispatch(listProducts());
+  }, [dispatch]);
 
-    const fetchProducts = async () => {
-      await axios
-        .get('/api/products')
-        .then((res) => {
-          setIsLoaded(true);
-          setProducts(res.data);
-        })
-        .catch((err) => {
-          setIsLoaded(true);
-          console.log(err);
-        });
-    };
-
-    fetchProducts();
-  }, []);
-  return isLoaded ? (
+  //Temporary test Redux dev tools and not get an error for products.map
+  //Check Redux dev tools, actions should be displayed and see the products in PRODUCT_LIST_SUCCESS
+  const products = [];
+  return (
     <div className="products-list">
       <Row>
         <h2>HEAVEN IN ONE BITE</h2>
@@ -50,8 +34,6 @@ const HomeContent = () => {
         })}
       </Row>
     </div>
-  ) : (
-    <div>Loading...</div>
   );
 };
 

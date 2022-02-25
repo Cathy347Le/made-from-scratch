@@ -146,6 +146,10 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
   - Store action types in constants so you can keep track of all of them in a central place. This is optional.
   - Setup redux to get all your products, productList
     - order is constants, reducers, and then actions
+    - Fire the action using useDispatch and useSelector hooks in HomeContent (before hooks, it was more difficult)
+      - useDispatch to call your actions
+      - useSelector lets you select the part of the state
+      - Dispatch listProducts and check for data in Redux dev tools (no frontend display yet)
 
 ## Things to do Later
 
