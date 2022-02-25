@@ -69,6 +69,23 @@ const productSchema = mongoose.Schema(
       required: true,
       default: 0,
     },
+    priceString: {
+      type: String,
+      required: true,
+      get: (val) =>
+        new Intl.NumberFormat('en-US', {
+          style: 'currency',
+          currency: 'USD',
+          minimumFractionDigits: 2,
+        }).format(val),
+      set: (val) =>
+        new Intl.NumberFormat('en-US', {
+          style: 'currency',
+          currency: 'USD',
+          minimumFractionDigits: 2,
+        }).format(val),
+      default: 0,
+    },
     countInStock: {
       type: Number,
       required: true,

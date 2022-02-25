@@ -47,7 +47,7 @@ const SingleProduct = () => {
                 text={`${product.numReviews} reviews`}
               />
             </ListGroup.Item>
-            <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
+            <ListGroup.Item>Price: {product.priceString}</ListGroup.Item>
             <ListGroup.Item>Description: {product.description}</ListGroup.Item>
           </ListGroup>
         </Col>
@@ -57,7 +57,7 @@ const SingleProduct = () => {
               <Row>
                 <Col>Price:</Col>
                 <Col>
-                  <strong>${product.price}</strong>
+                  <strong>{product.priceString}</strong>
                 </Col>
               </Row>
             </ListGroup.Item>

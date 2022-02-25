@@ -128,6 +128,10 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
 - ASYNC/AWAIT handles error using the TRY/CATCH structure, but can be messy when you have so many routes to do. You can use express-async-handler to handle your exceptions in a cleaner way
 - ErrorHandler.js moved to Middleware folder and reference to function on server.js should be at the top. Middleware runs in order that you define.
 
+##### Price Formatting
+
+- What happens if I need the price stored as a number and string? Is it better to add the string version in the data or reused a function that formats it?
+
 ## Things to do Later
 
 - Update React Router to v6
