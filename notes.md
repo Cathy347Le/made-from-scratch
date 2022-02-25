@@ -130,7 +130,11 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
 
 ##### Price Formatting
 
-- What happens if I need the price stored as a number and string? Is it better to add the string version in the data or reused a function that formats it?
+- What happens if I need the price stored as a number and string? Is it better to add the string version in the data or reused a function that formats it? I added it as a data property in the product model.
+
+### REDUX
+
+#### Redux-Traversy Branch
 
 ## Things to do Later
 
