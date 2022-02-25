@@ -16,11 +16,11 @@ const HomeContent = () => {
     // };
 
     const fetchProducts = async () => {
-      const res = await axios
+      await axios
         .get('/api/products')
-        .then((data) => {
+        .then((res) => {
           setIsLoaded(true);
-          setProducts(data.data);
+          setProducts(res.data);
         })
         .catch((err) => {
           setIsLoaded(true);

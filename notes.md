@@ -136,6 +136,12 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
 
 #### Redux-Traversy Branch
 
+- In frontend, install `npm i redux react-redux redux-thunk redux-devtools-extension`
+  - redux and react-redux go together
+  - thunk lets you make async requests in your actions
+  - redux-dev-tools-extensions makes it easy to use the chrome redux dev tools
+- In frontend, setup scaffold for redux-store
+
 ## Things to do Later
 
 - Update React Router to v6

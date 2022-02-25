@@ -12,11 +12,11 @@ const SingleProduct = () => {
 
   useEffect(() => {
     const fetchProduct = async () => {
-      const res = await axios
+      await axios
         .get(`/api/products/${params.id}`)
-        .then((data) => {
+        .then((res) => {
           setIsLoaded(true);
-          setProduct(data.data);
+          setProduct(res.data);
         })
         .catch((err) => {
           setIsLoaded(true);
