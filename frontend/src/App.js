@@ -5,7 +5,7 @@ import HomeContent from './Pages/HomeContent';
 import CartPage from './Pages/CartPage';
 import StoryPage from './Pages/StoryPage';
 import FaqPage from './Pages/FaqPage';
-import SingleProduct from './Pages/SingleProduct';
+import ProductPage from './Pages/ProductPage';
 import Footer from './Components/Footer';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
@@ -20,7 +20,7 @@ function App() {
             <Route path="/cart/:id?" component={CartPage} />
             <Route path="/our-story" component={StoryPage} />
             <Route path="/faq" component={FaqPage} />
-            <Route path="/product/:id" component={SingleProduct} />
+            <Route path="/product/:id" component={ProductPage} />
           </div>
         </Container>
         <Footer />

@@ -14,7 +14,7 @@ import { listProductDetails } from '../Actions/productActions';
 import ProductRating from '../Components/ProductRating';
 import ErrorMessage from '../Components/ErrorMessage';
 
-const SingleProduct = () => {
+const ProductPage = () => {
   const [qty, setQty] = useState(1);
 
   const params = useParams();
@@ -124,4 +124,4 @@ const SingleProduct = () => {
   );
 };
 
-export default SingleProduct;
+export default ProductPage;
