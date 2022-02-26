@@ -153,6 +153,11 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
       - useSelector to display your products on the front end.
       - Tutorial mentions throwing an error to check and see they correct action type show on redux dev tool
 
+#### Add Message Component (nah to Loader)
+
+- Add the react-bootstrap alert component as a flexible alert message
+- I believe this is an example of an high order component.
+
 ## Things to do Later
 
 - Update React Router to v6
