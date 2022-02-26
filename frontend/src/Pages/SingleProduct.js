@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   Row,
@@ -18,6 +18,7 @@ const SingleProduct = () => {
   const [qty, setQty] = useState(1);
 
   const params = useParams();
+  const history = useHistory();
   const dispatch = useDispatch();
 
   //Capture the part of the state you want, which is productDetails
@@ -29,7 +30,11 @@ const SingleProduct = () => {
     dispatch(listProductDetails(params.id));
   }, [dispatch, params.id]);
 
-  const list = [];
+  //AddToCart button will redirect(useHistory) to the cart page
+  //Link will include parameters that you want to pass to the redirected page
+  const handleAddToCard = () => {
+    history.push(`/cart/${params.id}?qty=${qty}`);
+  };
 
   return (
     <div className="single-product-page">
@@ -102,6 +107,7 @@ const SingleProduct = () => {
               )}
               <ListGroup.Item>
                 <Button
+                  onClick={handleAddToCard}
                   className="btn btn-block btn-primary"
                   type="button"
                   style={{ width: '100%' }}
