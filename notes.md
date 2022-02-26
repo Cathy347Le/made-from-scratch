@@ -163,7 +163,9 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
   - Add functionality to AddToCart button, which will redirect to the Add page and pass in the product ID and quantity via the URL params. Click AddToCart button to double check the url.
   - Create Cart page. Route would make /id? optional
   - Add Cart constants, reducers, bring in reducers into store, check Redux Dev Tools for cart state
-  - Add actions, then bring them in to the Cart component
+  - Add actions and use Local Storage. Update store.js to access the local storage
+    - Need Axios because when we add an item to the cart, we need to make a request to /api/products/:id to get all the data related to that specific product
+- Bring actions into the Cart component
 
 #### Add Message Component (nah to Loader)
 
