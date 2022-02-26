@@ -162,6 +162,8 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
   - If count in stock is 5. Need to create an array of [0,1,2,3,4] so form select options can be 1,2,3,4,5.
   - Add functionality to AddToCart button, which will redirect to the Add page and pass in the product ID and quantity via the URL params. Click AddToCart button to double check the url.
   - Create Cart page. Route would make /id? optional
+  - Add Cart constants, reducers, bring in reducers into store, check Redux Dev Tools for cart state
+  - Add actions, then bring them in to the Cart component
 
 #### Add Message Component (nah to Loader)
 
