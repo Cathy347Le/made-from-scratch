@@ -1,33 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 import { Row, Col, Image, ListGroup, Card, Button } from 'react-bootstrap';
-import axios from 'axios';
 import ProductRating from '../Components/ProductRating';
+import { listProductDetails } from '../Actions/productActions';
 
 const SingleProduct = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [product, setProduct] = useState({});
-
   const params = useParams();
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    const fetchProduct = async () => {
-      await axios
-        .get(`/api/products/${params.id}`)
-        .then((res) => {
-          setIsLoaded(true);
-          setProduct(res.data);
-        })
-        .catch((err) => {
-          setIsLoaded(true);
-          console.log(err);
-        });
-    };
+    dispatch(listProductDetails(params.id));
+  }, [dispatch, params.id]);
 
-    fetchProduct();
-  }, [params.id]);
+  const product = {};
 
-  return isLoaded ? (
+  return (
     <div className="single-product-page">
       <Link className="btn btn-outline-primary my-3" to="/">
         Go Back
@@ -83,8 +71,6 @@ const SingleProduct = () => {
         </Col>
       </Row>
     </div>
-  ) : (
-    <div>Loading...</div>
   );
 };
 

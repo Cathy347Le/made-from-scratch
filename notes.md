@@ -145,13 +145,15 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
   - Create productReducers
   - Store action types in constants so you can keep track of all of them in a central place. This is optional.
   - Setup redux to get all your products, productList
-    - order is constants, reducers, and then actions
+    - order is setup constants and reducers, bring reducers into store.js, then setup actions, add actions to the component and test on Redux dev tools using useDispatch. Once Redux dev tools checks out, useSelector to select that piece of state and display it on the frontend.
     - Fire the action using useDispatch and useSelector hooks in HomeContent (before hooks, it was more difficult)
       - useDispatch to call your actions
       - useSelector lets you select the part of the state
       - Dispatch listProducts and check for data in Redux dev tools (no frontend display yet)
       - useSelector to display your products on the front end.
       - Tutorial mentions throwing an error to check and see they correct action type show on redux dev tool
+  - Setup fetch single product using redux
+    - order is constants, reducers, bring in reducer into store.js, then actions, bring in actions into component, test redex dev tools, and finally render it on the frontend
 
 #### Add Message Component (nah to Loader)
 
