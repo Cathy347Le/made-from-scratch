@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { CART_ADD_ITEM, CART_REMOVE_ITEM } from '../constants/cartConstants';
+import { CART_ADD_ITEM, CART_REMOVE_ITEM } from '../Constants/cartConstants';
 
 //Need getState for localStorage. getState lets you get the entire state tree
 export const addToCart = (id, qty) => async (dispatch, getState) => {

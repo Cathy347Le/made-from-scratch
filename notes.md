@@ -165,7 +165,7 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
   - Add Cart constants, reducers, bring in reducers into store, check Redux Dev Tools for cart state
   - Add actions and use Local Storage. Update store.js to access the local storage
     - Need Axios because when we add an item to the cart, we need to make a request to /api/products/:id to get all the data related to that specific product
-- Bring actions into the Cart component
+- Bring actions into the Cart component and check on Redux Dev Tools
 
 #### Add Message Component (nah to Loader)
 
