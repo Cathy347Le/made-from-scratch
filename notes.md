@@ -158,6 +158,9 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
 
 ##### ADD CART FUNCTIONALITY
 
+- In single product page, add form select above Add to Cart button if product is in stock
+  - If count in stock is 5. Need to create an array of [0,1,2,3,4] so form select options can be 1,2,3,4,5.
+
 #### Add Message Component (nah to Loader)
 
 - Add the react-bootstrap alert component as a flexible alert message
