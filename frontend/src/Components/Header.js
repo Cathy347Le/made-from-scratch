@@ -32,7 +32,9 @@ const Header = () => {
           </LinkContainer>
         </Nav>
         <Nav className="ml-auto">
-          <Nav.Link href="#home">Cart</Nav.Link>
+          <LinkContainer to="/cart">
+            <Nav.Link>Cart</Nav.Link>
+          </LinkContainer>
           <Nav.Link href="#out-story">Sign In</Nav.Link>
         </Nav>
       </Container>

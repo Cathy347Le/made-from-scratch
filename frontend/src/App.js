@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Header from './Components/Header';
 import HomeContent from './Pages/HomeContent';
+import CartPage from './Pages/CartPage';
 import Story from './Pages/Story';
 import Faq from './Pages/Faq';
 import SingleProduct from './Pages/SingleProduct';
@@ -16,6 +17,7 @@ function App() {
         <Container>
           <div className="main-content py-5">
             <Route path="/" exact component={HomeContent} />
+            <Route path="/cart/:id?" component={CartPage} />
             <Route path="/our-story" component={Story} />
             <Route path="/faq" component={Faq} />
             <Route path="/product/:id" component={SingleProduct} />
