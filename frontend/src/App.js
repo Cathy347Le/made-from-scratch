@@ -3,8 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Header from './Components/Header';
 import HomeContent from './Pages/HomeContent';
 import CartPage from './Pages/CartPage';
-import Story from './Pages/Story';
-import Faq from './Pages/Faq';
+import StoryPage from './Pages/StoryPage';
+import FaqPage from './Pages/FaqPage';
 import SingleProduct from './Pages/SingleProduct';
 import Footer from './Components/Footer';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
@@ -18,8 +18,8 @@ function App() {
           <div className="main-content py-5">
             <Route path="/" exact component={HomeContent} />
             <Route path="/cart/:id?" component={CartPage} />
-            <Route path="/our-story" component={Story} />
-            <Route path="/faq" component={Faq} />
+            <Route path="/our-story" component={StoryPage} />
+            <Route path="/faq" component={FaqPage} />
             <Route path="/product/:id" component={SingleProduct} />
           </div>
         </Container>

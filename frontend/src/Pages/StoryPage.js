@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Story = () => {
+const StoryPage = () => {
   return <div>This is the Story page</div>;
 };
 
-export default Story;
+export default StoryPage;
