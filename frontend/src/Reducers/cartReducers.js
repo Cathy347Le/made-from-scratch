@@ -10,6 +10,7 @@ export const cartReducer = (state = { cartItems: [] }, action) => {
 
       if (existItem) {
         //Honestly I don't understand this
+        //If item exists, replace it with current item (quanity will be from current item)
         return {
           ...state,
           cartItems: state.cartItems.map((x) =>
