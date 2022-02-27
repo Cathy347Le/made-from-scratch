@@ -168,6 +168,8 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
 - Bring actions into the Cart component and check on Redux Dev Tools
 - Bring in the state using useSelector and display on frontend
 - Add trash can button and checkout button - test by having onClick function set to console.log(msg)
+- ## Add remove items from cart feature
+- Setup constants, reducers, store (no need), actions, component, Redex dev tools
 
 #### Add Message Component (nah to Loader)
 

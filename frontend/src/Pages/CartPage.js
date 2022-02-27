@@ -11,7 +11,7 @@ import {
   Card,
 } from 'react-bootstrap';
 import ErrorMessage from '../Components/ErrorMessage';
-import { addToCart } from '../Actions/cartActions';
+import { addToCart, removeFromCart } from '../Actions/cartActions';
 import { FaTrashAlt } from 'react-icons/fa';
 
 const CartPage = () => {
@@ -28,7 +28,7 @@ const CartPage = () => {
 
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
-  //   console.log(cartItems);
+  console.log(cartItems);
 
   useEffect(() => {
     if (params.id) {
@@ -36,9 +36,8 @@ const CartPage = () => {
     }
   }, [dispatch, params.id, qty]);
 
-  const removeFromCartHandler = (id) => {
-    console.log('remove');
-    //history.push("/login?redirect=shipping")
+  const handleRemoveFromCart = (id) => {
+    dispatch(removeFromCart(id));
   };
 
   //If user is not logged in, go to login. If user is logged in, it will redirect to shipping
@@ -87,7 +86,7 @@ const CartPage = () => {
                     <Button
                       type="button"
                       variant="light"
-                      onClick={() => removeFromCartHandler()}
+                      onClick={() => handleRemoveFromCart(item.product)}
                     >
                       <FaTrashAlt />
                     </Button>

@@ -25,3 +25,13 @@ export const addToCart = (id, qty) => async (dispatch, getState) => {
   localStorage.setItem('cartItems', JSON.stringify(getState().cart.cartItems));
   //Know that your have localStorage, how do you access it? You do that in store.js
 };
+
+export const removeFromCart = (id) => (dispatch, getState) => {
+  dispatch({
+    type: CART_REMOVE_ITEM,
+    payload: id,
+  });
+
+  //Access entire state tree with getState and select only the cart items
+  localStorage.setItem('cartItems', JSON.stringify(getState().cart.cartItems));
+};
