@@ -147,7 +147,7 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
   - Constants (optional)
   - Reducers - this is where your logic lives. Reducers take in an initial state and action
   - Bring in reducers into store.js (if neccessary)
-  - Actions - describe your payload (aka data) here
+  - Actions - describe your payload (aka data) here and may need to make an API/Axios call
   - Bring in actions into the targeted component
     - Dispatch your actions in useEffect
   - In the component, useDispatch to dispatch your actions and test on Redux Dev Tools
@@ -174,7 +174,7 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
 
 - Add form select quanity above Add to Cart button if product is in stock
 - If count in stock is 5. Need to create an array of [0,1,2,3,4] so form select options can be 1,2,3,4,5.
-- Add functionality to AddToCart button, which will redirect to the Add page and pass in the product ID and quantity via the URL params. Click AddToCart button to double check the url.
+- Add functionality to AddToCart button, which will redirect to the Add page and pass in the product ID and quantity via the URL params. Click AddToCart button to check the url in the address bar.
 - Create Cart page. Route would make /id? optional
   - Add Cart constants, reducers, bring in reducers into store, check Redux Dev Tools for cart state
   - Add actions and use Local Storage. Update store.js to access the local storage
