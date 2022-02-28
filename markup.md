@@ -10,11 +10,15 @@
 
 ###### H6 MADE FROM SCRATCH - STEP BY STEP
 
+---
+
 Regular
 **Bold**
 _Italic_
 **_Bold and Italic_**
 ~~Strikethrough~~
+
+---
 
 - First item
 - Second item
