@@ -8,13 +8,14 @@ export const addToCart = (id, qty) => async (dispatch, getState) => {
   dispatch({
     type: CART_ADD_ITEM,
     payload: {
-      product: data._id,
+      //I changed it from product to productID
+      productId: data._id,
       name: data.name,
       image: data.image,
       price: data.price,
       priceString: data.priceString,
       countInStock: data.countInStock,
-      //Comes from above
+      //Comes from function args
       qty,
     },
   });
@@ -23,7 +24,7 @@ export const addToCart = (id, qty) => async (dispatch, getState) => {
   //It returns a JSON object and needs to be converted to a string. LocalStorage stores data as a string.
   //If order for us to it, will need to convert it back to JSON, using JSON.parse()
   localStorage.setItem('cartItems', JSON.stringify(getState().cart.cartItems));
-  //Know that your have localStorage, how do you access it? You do that in store.js
+  //Know that you have localStorage, how do you access it? You do that in store.js as your initial state
 };
 
 export const removeFromCart = (id) => (dispatch, getState) => {

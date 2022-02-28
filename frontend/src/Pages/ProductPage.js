@@ -107,11 +107,11 @@ const ProductPage = () => {
               )}
               <ListGroup.Item>
                 <Button
-                  onClick={handleAddToCard}
                   className="btn btn-block btn-primary"
                   type="button"
                   style={{ width: '100%' }}
                   disabled={product.countInStock === 0}
+                  onClick={handleAddToCard}
                 >
                   Add To Cart
                 </Button>

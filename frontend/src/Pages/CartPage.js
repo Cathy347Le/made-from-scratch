@@ -22,13 +22,13 @@ const CartPage = () => {
 
   //params.id is the product ID from the URL
 
-  //Capture just the quantity value from the URL
+  // Capture just the quantity value from the URL
   const qty = location.search ? Number(location.search.split('=')[1]) : 1;
-  //   console.log(params.id, location.search, qty);
+  // console.log(params.id, location.search, qty);
 
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
-  console.log(cartItems);
+  // console.log(cartItems);
 
   useEffect(() => {
     if (params.id) {
@@ -57,7 +57,7 @@ const CartPage = () => {
         ) : (
           <ListGroup variant="flush">
             {cartItems.map((item) => (
-              <ListGroup.Item key={item.product}>
+              <ListGroup.Item key={item.productId}>
                 <Row>
                   <Col md={2}>
                     <Image src={item.image} alt={item.name} fluid rounded />
@@ -86,7 +86,7 @@ const CartPage = () => {
                     <Button
                       type="button"
                       variant="light"
-                      onClick={() => handleRemoveFromCart(item.product)}
+                      onClick={() => handleRemoveFromCart(item.productId)}
                     >
                       <FaTrashAlt />
                     </Button>
