@@ -132,11 +132,11 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
 
 - What happens if I need the price stored as a number and string? Is it better to add the string version in the data or reused a function that formats it? I added it as a data property in the product model.
 
-## REDUX
+# REDUX
 
-### Redux-Traversy Branch
+### _REDUX-TRAVERSY BRANCH_
 
-##### SETUP
+#### SETUP
 
 - In frontend, install `npm i redux react-redux redux-thunk redux-devtools-extension`
   - redux and react-redux go together
@@ -144,19 +144,19 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
   - redux-dev-tools-extensions makes it easy to use the chrome redux dev tools
 - In frontend, setup scaffold for redux-store
 
-##### FETCH ALL PRODUCTS
+#### FETCH ALL PRODUCTS
 
 - Replace current functions: fetch all products and fetch single product
   - Create productReducers
   - Store action types in constants so you can keep track of all of them in a central place. This is optional.
   - Setup redux to get all your products, productList - order is setup constants and reducers, bring reducers into store.js, then setup actions, add actions to the component and test on Redux dev tools using useDispatch. Once Redux dev tools checks out, useSelector to select that piece of state and display it on the frontend. - Fire the action using useDispatch and useSelector hooks in HomeContent (before hooks, it was more difficult) - useDispatch to call your actions - useSelector lets you select the part of the state - Dispatch listProducts and check for data in Redux dev tools (no frontend display yet) - useSelector to display your products on the front end. - Tutorial mentions throwing an error to check and see they correct action type show on redux dev tool
 
-##### FETCH SINGLE PRODUCTS
+#### FETCH SINGLE PRODUCTS
 
 - Setup fetch single product using redux
   - order is constants, reducers, bring in reducer into store.js, then actions, bring in actions into component, test redex dev tools, and finally render it on the frontend
 
-##### ADD CART FUNCTIONALITY
+#### ADD CART FUNCTIONALITY
 
 - In single product page, add form select above Add to Cart button if product is in stock
   - If count in stock is 5. Need to create an array of [0,1,2,3,4] so form select options can be 1,2,3,4,5.
@@ -168,13 +168,14 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
 - Bring actions into the Cart component and check on Redux Dev Tools
 - Bring in the state using useSelector and display on frontend
 - Add trash can button and checkout button - test by having onClick function set to console.log(msg)
-- ## Add remove items from cart feature
+- ##### Add Remove Items From Cart Feature
 - Setup constants, reducers, store (no need), actions, component, Redex dev tools
 
-#### Add Message Component (nah to Loader)
+#### ADD MESSAGE COMPONENT
 
 - Add the react-bootstrap alert component as a flexible alert message
 - I believe this is an example of an high order component.
+- Skip loader component
 
 ## Things to do Later
 
