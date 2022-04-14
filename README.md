@@ -1,4 +1,4 @@
-# Made from Scratch
+# Made from Scratch Baby
 
 ### An Asian-American bakery offering pastries that are damn delicious
 
