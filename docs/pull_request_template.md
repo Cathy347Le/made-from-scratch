@@ -2,7 +2,7 @@
 
 Please include a summary of the changes and the related issue. Please also include relevant motivation and context. List any dependencies that are required for this change.
 
-Fixes # (issue)
+JIRA ticket and link
 
 ## Type of change
 
@@ -20,17 +20,11 @@ Please describe the tests that you ran to verify your changes. Provide instructi
 - [ ] Test A
 - [ ] Test B
 
-**Test Configuration**:
-
-- Firmware version:
-- Hardware:
-- Toolchain:
-- SDK:
-
 # Checklist:
 
 - [ ] My code follows the style guidelines of this project
-- [ ] I have performed a self-review of my code
+- [ ] I fixed all my linting errors
+- [ ] If it is a core feature, I have added thorough tests.
 - [ ] I have commented my code, particularly in hard-to-understand areas
 - [ ] I have made corresponding changes to the documentation
 - [ ] My changes generate no new warnings
