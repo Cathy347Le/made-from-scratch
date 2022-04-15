@@ -1,4 +1,4 @@
-> If this is simple PR and/or this template does not fit the requirements, this template can be deleted.
+> If this is simple PR and/or this template does not fit the requirements, you can delete it.
 
 # Description
 
