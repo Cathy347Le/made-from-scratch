@@ -1,12 +1,20 @@
 const express = require('express');
 const router = express.Router();
-const {
-	getProducts,
-	getProductById,
-} = require('../controllers/productControllers');
+const productController = require('../controllers/productControllers');
 
-router.route('/').get(getProducts);
-router.route('/:id').get(getProductById);
+//GET ALL PRODUCTS
+router.get('/', productController.index);
+
+//GET SINGLE PRODUCT BY ID
+router.get('/:id', productController.show);
+
+//TRAVIS WAY
+// const {
+// 	getProducts,
+// 	getProductById,
+// } = require('../controllers/productControllers');
+// router.route('/').get(getProducts);
+// router.route('/:id').get(getProductById);
 
 //CHAINING PROMISES
 // router.get('/', (req, res) => {
