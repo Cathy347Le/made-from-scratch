@@ -203,6 +203,9 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
 
 - Backend User Authentication
 - Front End User Authentication and Profile
+- Update backend with ES6 instead of common JS
+  - add `"type": "module"` in package.json
+  - In backend, need to import the file extension (not needed in frontend)
 
 ##### Clean up Routes folder
 
