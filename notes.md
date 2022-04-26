@@ -199,7 +199,7 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
   ~~- Figure out why error handling is not working - need to install `npm i express-async-handler`~~
 - Upload multiple product images feature
 
-## Authentication
+## Authentication Branch
 
 - Backend User Authentication
 - Front End User Authentication and Profile
