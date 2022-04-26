@@ -215,4 +215,11 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
 
 #### SETUP USER ENDPOINT
 
-- Get /api/users/login endpoint to work with Postman (backend version of console). Get Postman to send back your request
+- Get /api/users/login endpoint to work with Postman (backend version of console). Get Postman to send back your request. Make sure plumbing is setup.
+
+```
+export const authUser = asyncHandler(async (req, res) => {
+	const { email, password } = req.body;
+	res.send({ email, password });
+});
+```
