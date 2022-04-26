@@ -1,8 +1,8 @@
-const express = require('express');
-const dotenv = require('dotenv');
-const connectDB = require('./db/connection');
-const productRoutes = require('./routes/productRoutes');
-const errorHandler = require('./middleware/errorMiddleware');
+import express from 'express';
+import dotenv from 'dotenv';
+import { connectDB } from './db/connection.js';
+import productRoutes from './routes/productRoutes.js';
+import { errorHandler } from './middleware/errorMiddleware.js';
 
 dotenv.config();
 connectDB();
@@ -15,7 +15,7 @@ app.use('/api/products', productRoutes);
 const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
-  console.log(
-    `Server listening on ${process.env.NODE_ENV} mode on PORT ${PORT}`
-  );
+	console.log(
+		`Server listening on ${process.env.NODE_ENV} mode on PORT ${PORT}`
+	);
 });

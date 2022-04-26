@@ -1,9 +1,9 @@
-const express = require('express');
+import express from 'express';
 const router = express.Router();
-const {
+import {
 	getProducts,
 	getProductById,
-} = require('../controllers/productControllers');
+} from '../controllers/productControllers.js';
 
 router.route('/').get(getProducts);
 router.route('/:id').get(getProductById);
@@ -46,4 +46,4 @@ router.route('/:id').get(getProductById);
 //   })
 // );
 
-module.exports = router;
+export default router;
