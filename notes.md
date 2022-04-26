@@ -203,3 +203,7 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
 
 - Backend User Authentication
 - Front End User Authentication and Profile
+
+##### Clean up Routes folder
+
+- Remove logic from the routes folder and have routes just handle routes and map to a controllers methods. (Create Controller folder)
