@@ -215,7 +215,7 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
 
 #### SETUP USER ENDPOINT
 
-- Get /api/users/login endpoint to work with Postman (backend version of console). Get Postman to send back your request. Make sure plumbing is setup.
+- Get /api/users/login endpoint to work with Postman (backend version of console.log). Get Postman to send back your request to make sure plumbing is setup.
 - The new version of express parses the request body as JSON object and there is no need to use the body-parser package
 
 ```
