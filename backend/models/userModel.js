@@ -28,6 +28,9 @@ const userSchema = mongoose.Schema(
 );
 
 //For user login, creating a method called matchPassword that searches if the entered password matches the hashed password in the system.
+//This is how you can add methods to mongoose models
+//The benefit of this way is preventing from duplication of validation methods in multiple places
+//Do not declare methods using ES6 arrow functions (=>). Arrow functions explicitly prevent binding this, so your method will not have access to the document and the above examples will not work.
 userSchema.methods.matchPassword = async function (enteredPassword) {
 	return await bcrypt.compare(enteredPassword, this.password);
 };
