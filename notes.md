@@ -206,4 +206,6 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
 
 ##### Clean up Routes folder
 
-- Remove logic from the routes folder and have routes just handle routes and map to a controllers methods. (Create Controller folder)
+- Create Controller folder. Remove logic from the routes folder and have routes just handle routes and map to a controllers methods. Cleaner look.
+  - authentication branch has Travis' way
+  - route-controller-clean2 has Cathy's way aka ThinkMovie
