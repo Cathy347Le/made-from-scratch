@@ -223,3 +223,5 @@ export const authUser = asyncHandler(async (req, res) => {
 	res.send({ email, password });
 });
 ```
+
+- Setup user endpoint to search for an authenicated user (no token generated yet) and test on Postman
