@@ -212,3 +212,7 @@ Similar to checking on local browser http://localhost:5000/api/products but it i
 - Create Controller folder. Remove logic from the routes folder and have routes just handle routes and map to a controllers methods. Cleaner look.
   - authentication branch has Travis' way
   - route-controller-clean2 has Cathy's way aka ThinkMovie
+
+#### SETUP USER ENDPOINT
+
+- Get /api/users/login endpoint to work with Postman (backend version of console). Get Postman to send back your request
