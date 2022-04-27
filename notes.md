@@ -240,4 +240,5 @@ export const authUser = asyncHandler(async (req, res) => {
 - Setup authMiddleware plumbing and see if server does indeed recieve the JWT correctly
 - Update authMiddleware.js to capture the req.headers.authorization
 - The HTTP 201 Created success status response code indicates that the request has succeeded and has led to the creation of a resource
-- Setup a new user, requires name, email, and password. Need a way to encrypt the password when it gets sent
+- Setup a new user, requires name, email, and password. Need a way to encrypt the password when it is saved in MongoDB which is done in the user Model
+- In Postman, when you sent a POST request to /api/users with a name, email, and password. You should get the user object back (no password) and when you check on MongoDB, you should see the record for the new user with a hashed password
