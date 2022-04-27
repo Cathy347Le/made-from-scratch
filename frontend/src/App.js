@@ -11,6 +11,7 @@ import FaqPage from './Pages/FaqPage';
 import ProductPage from './Pages/ProductPage';
 import Footer from './Components/Footer';
 import ShippingPage from './Pages/ShippingPage';
+import PaymentPage from './Pages/PaymentPage';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
 						<Route path='/faq' component={FaqPage} />
 						<Route path='/product/:id' component={ProductPage} />
 						<Route path='/shipping' exact component={ShippingPage} />
+						<Route path='/payment' exact component={PaymentPage} />
 					</div>
 				</Container>
 				<Footer />

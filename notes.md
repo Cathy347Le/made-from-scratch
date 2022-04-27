@@ -273,3 +273,18 @@ export const authUser = asyncHandler(async (req, res) => {
 - This is preference, but we're going to display the Shipping Page + Form first
 - Add cart reducers and actions
 - Create CheckoutSteps bread crumbs
+- Work on Payment Page & Save Payment Method - **not where we make the payment, but where we choose the payment method**
+- BUG with Stripe radio button
+- Since paymentMethod is stored in Local Storage, I went ahead and added it to the initial state
+
+```
+When I click on the Stripe radio button for the first time, the radio button doesn't become selected.  It only gets selected when I click on it the second time.
+
+I'm still not 100% sure why the radio button doesn't register the first click, but I think it has to do with React re-rendering the component after useState is called.  When the component re-renders, "checked" is still hard-coded into our PayPal option.
+
+To get around this, we can add the following to our Form.Check's:
+
+checked={paymentMethod === 'PayPal'} //for PayPal option
+checked={paymentMethod === 'Stripe'} //for Stripe option
+This makes whichever box is checked also dependent on the state of paymentMethod.
+```
