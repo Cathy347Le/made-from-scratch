@@ -267,3 +267,7 @@ export const authUser = asyncHandler(async (req, res) => {
     - We already as have profile route and controller. Want to add a update profile endpoint and test in Postman
     - Create Profile Page and Get User Details
       **- UPDATE SUCCESS MESSAGE IS NOT DISPLAYING**
+
+#### CHECKOUT PROCESS - SHIPPING AND ADDRESS
+
+- This is preference, but we're going to display the Shipping Page + Form first

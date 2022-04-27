@@ -10,6 +10,7 @@ import StoryPage from './Pages/StoryPage';
 import FaqPage from './Pages/FaqPage';
 import ProductPage from './Pages/ProductPage';
 import Footer from './Components/Footer';
+import ShippingPage from './Pages/ShippingPage';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
 						<Route path='/our-story' component={StoryPage} />
 						<Route path='/faq' component={FaqPage} />
 						<Route path='/product/:id' component={ProductPage} />
+						<Route path='/shipping' exact component={ShippingPage} />
 					</div>
 				</Container>
 				<Footer />
