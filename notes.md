@@ -251,3 +251,5 @@ export const authUser = asyncHandler(async (req, res) => {
   - Create a Form Container Component since its our forms are pretty standard
   - Update the Link in the Header
   - Once you login, you can go to the Application tab and view your Local Storage info
+- Update Header when User is logged in
+  -

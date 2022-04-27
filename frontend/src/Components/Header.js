@@ -1,10 +1,21 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import './Header.scss';
 import navlogo from './assets/baking-icon-32x32.png';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { NavDropdown, Navbar, Nav, Container } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
 const Header = () => {
+	const dispatch = useDispatch();
+
+	const userLogin = useSelector((state) => state.userLogin);
+	const { userInfo } = userLogin;
+
+	const logoutHandler = () => {
+		console.log('logout');
+		// dispatch(logout());
+	};
+
 	return (
 		<Navbar bg='primary' variant='dark'>
 			<Container>
@@ -35,7 +46,22 @@ const Header = () => {
 					<LinkContainer to='/cart'>
 						<Nav.Link>Cart</Nav.Link>
 					</LinkContainer>
-					<Nav.Link href='/login'>Sign In</Nav.Link>
+					{userInfo ? (
+						<NavDropdown title={userInfo.name} id='username'>
+							<LinkContainer to='/profile'>
+								<NavDropdown.Item>Profile</NavDropdown.Item>
+							</LinkContainer>
+							<NavDropdown.Item onClick={logoutHandler}>
+								Logout
+							</NavDropdown.Item>
+						</NavDropdown>
+					) : (
+						<LinkContainer to='/login'>
+							<Nav.Link>
+								<i className='fas fa-user'></i> Sign In
+							</Nav.Link>
+						</LinkContainer>
+					)}
 				</Nav>
 			</Container>
 		</Navbar>
