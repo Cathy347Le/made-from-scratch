@@ -239,3 +239,5 @@ export const authUser = asyncHandler(async (req, res) => {
 - Need middleware to create protected route that requires a bearer token
 - Setup authMiddleware plumbing and see if server does indeed recieve the JWT correctly
 - Update authMiddleware.js to capture the req.headers.authorization
+- The HTTP 201 Created success status response code indicates that the request has succeeded and has led to the creation of a resource
+- Setup a new user, requires name, email, and password. Need a way to encrypt the password when it gets sent
