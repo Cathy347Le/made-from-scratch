@@ -236,3 +236,5 @@ export const authUser = asyncHandler(async (req, res) => {
 #### CREATED PROTECTED ROUTE
 
 - Create a new route to test on Postman /api/users/profile
+- Need middleware to create protected route that requires a bearer token
+- Setup authMiddleware plumbing and see if server does indeed recieve the JWT correctly
