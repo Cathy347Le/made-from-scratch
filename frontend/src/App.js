@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Header from './Components/Header';
 import LoginPage from './Pages/LoginPage';
 import RegisterPage from './Pages/RegisterPage';
+import ProfilePage from './Pages/ProfilePage';
 import HomeContent from './Pages/HomeContent';
 import CartPage from './Pages/CartPage';
 import StoryPage from './Pages/StoryPage';
@@ -20,6 +21,7 @@ function App() {
 					<div className='main-content py-5'>
 						<Route path='/login' exact component={LoginPage} />
 						<Route path='/register' exact component={RegisterPage} />
+						<Route path='/profile' exact component={ProfilePage} />
 						<Route path='/' exact component={HomeContent} />
 						<Route path='/cart/:id?' component={CartPage} />
 						<Route path='/our-story' component={StoryPage} />
