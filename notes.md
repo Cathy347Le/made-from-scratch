@@ -288,3 +288,5 @@ checked={paymentMethod === 'PayPal'} //for PayPal option
 checked={paymentMethod === 'Stripe'} //for Stripe option
 This makes whichever box is checked also dependent on the state of paymentMethod.
 ```
+
+- Add Payment Page and Funcionality

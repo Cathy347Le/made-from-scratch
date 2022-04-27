@@ -20,7 +20,7 @@ const PaymentPage = ({ history }) => {
 	const submitHandler = (e) => {
 		e.preventDefault();
 		dispatch(savePaymentMethod(paymentMethod));
-		history.push('/placeorder');
+		history.push('/place-order');
 	};
 
 	return (
