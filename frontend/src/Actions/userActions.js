@@ -24,7 +24,7 @@ import {
 	// USER_UPDATE_FAIL,
 	// USER_UPDATE_SUCCESS,
 	// USER_UPDATE_REQUEST,
-} from '../constants/userConstants';
+} from '../Constants/userConstants';
 // import { ORDER_LIST_MY_RESET } from '../constants/orderConstants';
 
 export const login = (email, password) => async (dispatch) => {
