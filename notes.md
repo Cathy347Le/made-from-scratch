@@ -226,3 +226,9 @@ export const authUser = asyncHandler(async (req, res) => {
 ```
 
 - Setup user endpoint to search for an authenicated user (no token generated yet) and test on Postman
+- Generate token to access private routes AKA only authenicated users can access routes. Generate JWT using [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) package.
+  - Explanation of JWT (JSON Web tokens)
+  - When a user is logged in, we need to generate a JWT for them that can be sent to a protected route inorder to get access
+  - Payload will user.id
+  - Secret will be in the .env folder
+  - Use Postman to test JWT token was generated correctly and https://jwt.io/ to decode your token.
