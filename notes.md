@@ -252,5 +252,10 @@ export const authUser = asyncHandler(async (req, res) => {
   - Update the Link in the Header
   - Once you login, you can go to the Application tab and view your Local Storage info
 - Update Header when User is logged in
+
   - Get dropdown to appear in Header (worry about Functionality next)
   - Update the userAction to logout
+
+  #### FRONTEND - USER REGISTER REDUCER, ACTION, & SCREEN
+
+  - Setup constants, reducers, store, actions, component, Redex dev tools
