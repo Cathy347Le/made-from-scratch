@@ -233,7 +233,7 @@ export const authUser = asyncHandler(async (req, res) => {
   - Secret will be in the .env folder
   - Use Postman to test JWT token was generated correctly and https://jwt.io/ to decode your token.
 
-#### CREATED PROTECTED ROUTE
+#### CREATED PROTECTED ROUTE AND CREATE USER
 
 - Create a new route to test on Postman /api/users/profile
 - Need middleware to create protected route that requires a bearer token
