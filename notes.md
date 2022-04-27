@@ -246,3 +246,8 @@ export const authUser = asyncHandler(async (req, res) => {
 #### FRONTEND - USER AUTHENTICATION & PROFILE
 
 - Setup User Login Reducer & Action
+- User Login Screen & Functionality
+  - Create the Login Page
+  - Create a Form Container Component since its our forms are pretty standard
+  - Update the Link in the Header
+  - Once you login, you can go to the Application tab and view your Local Storage info
