@@ -271,3 +271,5 @@ export const authUser = asyncHandler(async (req, res) => {
 #### CHECKOUT PROCESS - SHIPPING AND ADDRESS
 
 - This is preference, but we're going to display the Shipping Page + Form first
+- Add cart reducers and actions
+-

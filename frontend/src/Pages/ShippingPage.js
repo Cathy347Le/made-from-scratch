@@ -3,30 +3,25 @@ import { Form, Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import FormContainer from '../Components/FormContainer';
 // import CheckoutSteps from '../Components/CheckoutSteps';
-// import { saveShippingAddress } from '../Actions/cartActions';
+import { saveShippingAddress } from '../Actions/cartActions';
 
 //Add History for when we submit the form we want to push to the payment screen (don't want users hit the back button)
 const ShippingScreen = ({ history }) => {
-	// const cart = useSelector((state) => state.cart);
-	// const { shippingAddress } = cart;
+	const cart = useSelector((state) => state.cart);
+	const { shippingAddress } = cart;
 
-	// const [address, setAddress] = useState(shippingAddress.address);
-	// const [city, setCity] = useState(shippingAddress.city);
-	// const [postalCode, setPostalCode] = useState(shippingAddress.postalCode);
-	// const [country, setCountry] = useState(shippingAddress.country);
+	const [address, setAddress] = useState(shippingAddress.address);
+	const [city, setCity] = useState(shippingAddress.city);
+	const [postalCode, setPostalCode] = useState(shippingAddress.postalCode);
+	const [country, setCountry] = useState(shippingAddress.country);
 
-	const [address, setAddress] = useState('');
-	const [city, setCity] = useState('');
-	const [postalCode, setPostalCode] = useState('');
-	const [country, setCountry] = useState('');
-
-	// const dispatch = useDispatch();
+	const dispatch = useDispatch();
 
 	const submitHandler = (e) => {
 		e.preventDefault();
-		console.log('submit');
-		// dispatch(saveShippingAddress({ address, city, postalCode, country }));
-		// history.push('/payment');
+		//console.log('submit');
+		dispatch(saveShippingAddress({ address, city, postalCode, country }));
+		history.push('/payment');
 	};
 
 	return (
