@@ -259,3 +259,4 @@ export const authUser = asyncHandler(async (req, res) => {
   #### FRONTEND - USER REGISTER REDUCER, ACTION, & SCREEN
 
   - Setup constants, reducers, store, actions, component, Redex dev tools
+  - Create Register Page - WHY DO MY ERRORS NOT DISPLAY. FRONTEND DOES NOT DISPLAY THE SAME ERROR AS SERVER LOG
