@@ -260,3 +260,7 @@ export const authUser = asyncHandler(async (req, res) => {
 
   - Setup constants, reducers, store, actions, component, Redex dev tools
   - Create Register Page - WHY DO MY ERRORS NOT DISPLAY. FRONTEND DOES NOT DISPLAY THE SAME ERROR AS SERVER LOG
+
+    #### UPDATE PROFILE ENDPOINT AND SETUP PROFILE FRONTEND
+
+    - We already as have profile route and controller. Want to add a update profile endpoint and test in Postman
