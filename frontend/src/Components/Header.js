@@ -4,6 +4,7 @@ import './Header.scss';
 import navlogo from './assets/baking-icon-32x32.png';
 import { NavDropdown, Navbar, Nav, Container } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+import { logout } from '../Actions/userActions';
 
 const Header = () => {
 	const dispatch = useDispatch();
@@ -12,8 +13,8 @@ const Header = () => {
 	const { userInfo } = userLogin;
 
 	const logoutHandler = () => {
-		console.log('logout');
-		// dispatch(logout());
+		// console.log('logout');
+		dispatch(logout());
 	};
 
 	return (

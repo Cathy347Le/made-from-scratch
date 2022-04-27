@@ -253,3 +253,4 @@ export const authUser = asyncHandler(async (req, res) => {
   - Once you login, you can go to the Application tab and view your Local Storage info
 - Update Header when User is logged in
   - Get dropdown to appear in Header (worry about Functionality next)
+  - Update the userAction to logout
