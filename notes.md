@@ -276,7 +276,7 @@ export const authUser = asyncHandler(async (req, res) => {
 - Work on Payment Page & Save Payment Method - **not where we make the payment, but where we choose the payment method**
 - BUG with Stripe radio button
 - Since paymentMethod is stored in Local Storage, I went ahead and added it to the initial state
-  ==BUG Need Form Validation (like in payment method page, etc)==
+- BUG Need Form Validation (like in payment method page, etc) :bug
 
 ```
 When I click on the Stripe radio button for the first time, the radio button doesn't become selected.  It only gets selected when I click on it the second time.
