@@ -260,13 +260,13 @@ export const authUser = asyncHandler(async (req, res) => {
 
   - Setup constants, reducers, store, actions, component, Redex dev tools
   - Create Register Page
-    **- WHY DO MY ERRORS NOT DISPLAY. FRONTEND DOES NOT DISPLAY THE SAME ERROR AS SERVER LOG**
+  - BUG Why do my errors not display. frontend does not display the same error as server log :bug:
 
     #### UPDATE PROFILE ENDPOINT AND SETUP PROFILE FRONTEND
 
     - We already as have profile route and controller. Want to add a update profile endpoint and test in Postman
     - Create Profile Page and Get User Details
-      **- UPDATE SUCCESS MESSAGE IS NOT DISPLAYING**
+    - BUG Update success message is not displaying :bug:
 
 #### CHECKOUT PROCESS - SHIPPING AND ADDRESS
 
@@ -274,7 +274,7 @@ export const authUser = asyncHandler(async (req, res) => {
 - Add cart reducers and actions
 - Create CheckoutSteps bread crumbs
 - Work on Payment Page & Save Payment Method - **not where we make the payment, but where we choose the payment method**
-- BUG with Stripe radio button
+- BUG with Stripe radio button - RESOLVED
 - Since paymentMethod is stored in Local Storage, I went ahead and added it to the initial state
 - BUG Need Form Validation (like in payment method page, etc) :bug:
 
