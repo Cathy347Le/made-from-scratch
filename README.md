@@ -4,5 +4,5 @@
 
 #### Resources
 
-React, Redux, Node, MongoDB, Postman
+React, Redux, Node, MongoDB, Express, Postman
 React Bootstrap, Bootswatch (Pulse Theme)
